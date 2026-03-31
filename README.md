@@ -12,6 +12,8 @@ To use with Ed25519 keys (Edwards keys), please upgrade to the latest version.
 brew tap coinbase/cdpcurl
 brew install cdpcurl
 ```
+npm install -g @coinbase/cdpcurl
+cdpcurl --version
 
 ### AUR (_Thanks for the [contribution](https://github.com/coinbase/cdpcurl/pull/27) from @[ThatOneCalculator](https://github.com/ThatOneCalculator)!_)
 
