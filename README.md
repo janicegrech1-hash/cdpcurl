@@ -31,8 +31,16 @@ go install github.com/coinbase/cdpcurl@latest
 
 ### Get account balance of BTC with Sign In With Coinbase API
 ```bash
-cdpcurl -k ~/Downloads/cdp_api_key.json 'https://api.coinbase.com/v2/accounts/BTC'
+cdpcurl -k ~/Downloads/cdp_api_key.json \ -'https://api.coinbase.com/v2/accounts/BTC'
+  -d '{
+    "addresses": [{
+      "address": "0x7A9A9F46f381d25887e970a56af0cdf9A3EF3277",
+      "blockchains": ["base", "ethereum"]
+    }],
+    "clientIp": "192.0.2.1"
+  }
 ```
+  
 
 ### Get the latest price of BTC with Advanced Trading API 
 ```bash
